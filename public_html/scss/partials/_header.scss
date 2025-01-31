@@ -1,12 +1,64 @@
 
 $header-bg: $purple;
 $header-link-color: $white;
+$header-font: $josefin;
+$header-weight: $font-bold;
 
 
 header{
     padding: 30px 0;
     background-color: $header-bg;
+    
+    .branding{
+        text-align: center;
+        a{
+            color: $header-link-color;
+        }
+    } // end breading
+    
+    ul{
+        list-style: none;
+        padding-left: 0;
+        li{
+            a{
+                display: block;
+                text-align: center;
+                color: $header-link-color;
+                font-family: $josefin;
+                font-weight: $header-weight;
+            }
+        } // li end
+    } // ul end
 }
-header a{
-    color: $header-link-color;
+
+@media(min-width: 768px){
+    header{
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            ul{
+                display: flex;
+                li{
+                    a{
+                        padding: 5px;
+                    }
+                } // li end
+            } // ul end
+        } // container end
+    } // header end
+}
+
+@media(min-width: 992px){
+    header{
+        .container{
+            ul{
+                li{
+                    a{
+                        padding: 5px 15px;
+                    }
+                } // li end
+            } // ul end
+        } // container end
+    } // header end
 }
