@@ -1,4 +1,13 @@
 
+$default-bg: $light-gray;
+$default-text-color: $black;
+$default-font: $lato;
+$default-weight: $font-regular;
+
+$heading-color: $purple;
+$heading-font: $josefin;
+$heading-weight: $font-bold;
+
 img{
     max-width: 100%;
 }
@@ -18,4 +27,16 @@ html{
     margin: 0 auto;
     width: 95%;
     max-width: 1200px;
+}
+
+body{
+    background-color: $default-bg;
+    color: $black;
+    font-family: $default-font;
+    font-weight: $default-weight;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: $heading-font;
+    font-weight: $heading-weight;
+    color: $heading-color;
 }
