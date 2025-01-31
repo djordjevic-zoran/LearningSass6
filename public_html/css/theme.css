@@ -420,8 +420,34 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
 footer {
   padding: 30px 0;
   background-color: #f00aec; }
+  footer .container ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 30px; }
+    footer .container ul li a {
+      display: block;
+      text-align: center;
+      color: #ffffff;
+      font-family: "Josefin Sans", serif;
+      font-weight: 700;
+      padding: 5px 0;
+      font-size: 1.8rem; }
+      footer .container ul li a:hover, footer .container ul li a.active {
+        color: #0af282; }
+  footer .container .copyright {
+    color: #ffffff;
+    text-align: center; }
 
-footer a, footer p {
-  color: #ffffff; }
+@media (min-width: 768px) {
+  footer .container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer .container ul li a {
+      padding: 5px 15px; } }
+
+@media (min-width: 992px) {
+  footer .container ul li a {
+    padding: 5px 25px; } }
 
 /*# sourceMappingURL=theme.css.map */
