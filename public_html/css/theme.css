@@ -1,5 +1,35 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+.btn-default, .btn-red, .btn-green, .btn-orange, .btn-yellow, .btn-cyan {
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: none; }
+
+.btn-default {
+  background-color: #000000;
+  color: #ffffff; }
+
+.btn-red {
+  background-color: #f20a15;
+  color: #ffffff; }
+
+.btn-green {
+  background-color: #0af282;
+  color: #ffffff; }
+
+.btn-orange {
+  background-color: #f09b0a;
+  color: #ffffff; }
+
+.btn-yellow {
+  background-color: #f2ee0a;
+  color: #000000; }
+
+.btn-cyan {
+  background-color: #0af0d5;
+  color: #ffffff; }
+
 /*  FONTS  */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -385,14 +415,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
     Created on : Jan 30, 2025, 11:07:18 PM
     Author     : ZORAN
 */
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
-*/
-/*
-    Created on : Jan 30, 2025, 11:07:33 PM
-    Author     : ZORAN
-*/
+.service-section {
+  padding: 30px 0; }
+
 /*
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template

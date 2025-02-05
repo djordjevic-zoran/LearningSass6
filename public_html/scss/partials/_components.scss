@@ -1,0 +1,48 @@
+
+
+$btn-default: $black;
+$btn-default-color: $white;
+$btn-red: $red;
+$btn-green: $green;
+$btn-orange: $orange;
+$btn-yellow: $yellow;
+$btn-cyan: $cyan;
+$btn-dark-color: $black;
+
+%btn{
+    display: inline-block;
+    padding: 15px 25px;
+    
+    border-radius: 5px;
+    border: none;
+}
+.btn-default{
+    @extend %btn;
+    background-color: $btn-default;;
+    color: $btn-default-color;
+}
+.btn-red{
+    @extend %btn;
+    background-color: $btn-red;;
+    color: $btn-default-color;
+}
+.btn-green{
+    @extend %btn;
+    background-color: $btn-green;
+    color: $btn-default-color;
+}
+.btn-orange{
+    @extend %btn;
+    background-color: $btn-orange;
+    color: $btn-default-color;
+}
+.btn-yellow{
+    @extend %btn;
+    background-color: $btn-yellow;
+    color: $btn-dark-color;
+}
+.btn-cyan{
+    @extend %btn;
+    background-color: $btn-cyan;
+    color: $btn-default-color;
+}
