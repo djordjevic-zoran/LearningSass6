@@ -25,7 +25,7 @@ footer{
                     font-size: 1.8rem;
                     
                     &:hover , &.active{
-                        color: $footer-link-color;
+                        color: lighten(complement($footer-bg), 30);
                     }
                 }
             } // li end

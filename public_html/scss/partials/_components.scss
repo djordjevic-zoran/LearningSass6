@@ -18,31 +18,49 @@ $btn-dark-color: $black;
 }
 .btn-default{
     @extend %btn;
-    background-color: $btn-default;;
+    background-color: $btn-default;
     color: $btn-default-color;
+    &:hover{
+        background-color: rgba($btn-default, 0.5);
+    }
 }
 .btn-red{
     @extend %btn;
-    background-color: $btn-red;;
+    background-color: $btn-red;
     color: $btn-default-color;
+    &:hover{
+        background-color: rgba($btn-red, 0.8);
+    }
 }
 .btn-green{
     @extend %btn;
     background-color: $btn-green;
     color: $btn-default-color;
+    &:hover{
+        background-color: lighten($btn-green, 15);
+    }
 }
 .btn-orange{
     @extend %btn;
     background-color: $btn-orange;
     color: $btn-default-color;
+    &:hover{
+        background-color: lighten($btn-orange, 15);
+    }
 }
 .btn-yellow{
     @extend %btn;
     background-color: $btn-yellow;
     color: $btn-dark-color;
+    &:hover{
+        background-color: lighten($btn-yellow, 15);
+    }
 }
 .btn-cyan{
     @extend %btn;
     background-color: $btn-cyan;
     color: $btn-default-color;
+    &:hover{
+        background-color: lighten($btn-cyan, 15);
+    }
 }

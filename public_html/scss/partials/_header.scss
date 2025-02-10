@@ -3,6 +3,7 @@ $header-bg: $purple;
 $header-link-color: $white;
 $header-font: $josefin;
 $header-weight: $font-bold;
+$header-hover-color: $green;
 
 
 header{
@@ -26,6 +27,10 @@ header{
                 color: $header-link-color;
                 font-family: $josefin;
                 font-weight: $header-weight;
+                &:hover,
+                &.active{
+                    color: lighten(complement($header-bg), 25);
+                }
             }
         } // li end
     } // ul end
