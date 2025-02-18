@@ -8,7 +8,9 @@ $header-hover-color: $green;
 
 header{
     padding: 30px 0;
-    background-color: $header-bg;
+/*    background-color: $header-bg;*/
+
+@include styleSection(30px, 30px, $header-bg);
     
     .branding{
         text-align: center;

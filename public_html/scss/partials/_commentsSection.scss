@@ -1,9 +1,11 @@
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
-*/
-/*
-    Created on : Jan 30, 2025, 11:07:46 PM
-    Author     : ZORAN
-*/
+$comment-bg: $white;
 
+.comment-section{
+    @include styleSection(30px, 30px, $comment-bg);
+    
+    .comment-img{
+        img{
+            @include radius(50%);
+        }
+    }
+}

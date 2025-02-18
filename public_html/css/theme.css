@@ -1,9 +1,9 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 .btn-default, .btn-red, .btn-green, .btn-orange, .btn-yellow, .btn-cyan {
   display: inline-block;
   padding: 15px 25px;
-  border-radius: 5px;
+  /*@include radius(5px);*/
+  border-radius: 5px 0 5px 0;
   border: none; }
 
 .btn-default {
@@ -382,6 +382,8 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
   padding: 30px 0;
+  /*    background-color: $header-bg;*/
+  padding: 30px 0 30px;
   background-color: #f00aec; }
   header .branding {
     text-align: center; }
@@ -413,51 +415,46 @@ header {
   header .container ul li a {
     padding: 5px 15px; } }
 
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
-*/
-/*
-    Created on : Jan 30, 2025, 11:07:05 PM
-    Author     : ZORAN
-*/
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
-*/
-/*
-    Created on : Jan 30, 2025, 11:07:18 PM
-    Author     : ZORAN
-*/
-.service-section {
-  padding: 30px 0; }
+.home-section {
+  padding: 150px 0 150px;
+  background-color: #ffffff; }
 
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
-*/
-/*
-    Created on : Jan 30, 2025, 11:07:46 PM
-    Author     : ZORAN
-*/
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
-*/
-/*
-    Created on : Jan 30, 2025, 11:08:03 PM
-    Author     : ZORAN
-*/
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
-*/
-/*
-    Created on : Jan 30, 2025, 11:08:20 PM
-    Author     : ZORAN
-*/
+.about-section {
+  padding: 30px 0 30px;
+  background-color: #f00aec; }
+
+.service-section {
+  /*    padding: 30px 0;*/
+  padding: 30px 0 30px;
+  background-color: transparent; }
+
+.comment-section {
+  padding: 30px 0 30px;
+  background-color: #ffffff; }
+  .comment-section .comment-img img {
+    border-radius: 50%; }
+
+.courseSection table {
+  border: 1px solid #000000;
+  border-collapse: collapse;
+  width: 100%; }
+  .courseSection table th, .courseSection table td {
+    border: 1px solid #000000;
+    padding: 10px 15px; }
+  .courseSection table thead {
+    background-color: #f00aec; }
+    .courseSection table thead th {
+      color: #ffffff;
+      border: 1px solid #ffffff; }
+
+.contact-section {
+  padding: 30px 0 30px;
+  background-color: #ffffff; }
+
 footer {
-  padding: 30px 0;
+  /*    padding: 30px 0;
+    background-color: $footer-bg;*/
+  padding: 30px 0 30px;
   background-color: #f00aec; }
   footer .container ul {
     list-style: none;
