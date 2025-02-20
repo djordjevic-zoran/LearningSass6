@@ -1,13 +1,26 @@
 
 
-$btn-default: $black;
+/*$btn-default: $black;
 $btn-default-color: $white;
 $btn-red: $red;
 $btn-green: $green;
 $btn-orange: $orange;
 $btn-yellow: $yellow;
 $btn-cyan: $cyan;
-$btn-dark-color: $black;
+$btn-dark-color: $black;*/
+
+$pepco: (
+'default' : $black,
+'red'       : $red,
+'green'   : $green,
+'orange' : $orange,
+'yellow'   : $yellow,
+'cyan'     : $cyan,
+'fancy'   : $purple
+);
+
+
+
 
 %btn{
     display: inline-block;
@@ -15,13 +28,24 @@ $btn-dark-color: $black;
     
    /*@include radius(5px);*/
    
-   @include castumRadius(5px, 0, 5px, 0);
+   @include castumRadius(20px, 0, 20px, 0);
     border: none;
 }
-.btn-default{
+
+@each $key, $value in $pepco{
+    .btn-#{$key}{
+        @extend %btn;
+        background-color: $value;
+        color: zoran($value);
+        &:hover{
+            background-color: darken($value, 10%);
+        }
+    }
+}
+/*.btn-default{
     @extend %btn;
     background-color: $btn-default;
-    color: $btn-default-color;
+    color: zoran($btn-default);
     &:hover{
         background-color: rgba($btn-default, 0.5);
     }
@@ -29,7 +53,7 @@ $btn-dark-color: $black;
 .btn-red{
     @extend %btn;
     background-color: $btn-red;
-    color: $btn-default-color;
+    color: zoran($btn-red);
     &:hover{
         background-color: rgba($btn-red, 0.8);
     }
@@ -37,7 +61,7 @@ $btn-dark-color: $black;
 .btn-green{
     @extend %btn;
     background-color: $btn-green;
-    color: $btn-default-color;
+    color: zoran($btn-orange);
     &:hover{
         background-color: lighten($btn-green, 15);
     }
@@ -45,7 +69,7 @@ $btn-dark-color: $black;
 .btn-orange{
     @extend %btn;
     background-color: $btn-orange;
-    color: $btn-default-color;
+    color: zoran($btn-orange);
     &:hover{
         background-color: lighten($btn-orange, 15);
     }
@@ -53,7 +77,7 @@ $btn-dark-color: $black;
 .btn-yellow{
     @extend %btn;
     background-color: $btn-yellow;
-    color: $btn-dark-color;
+    color: zoran($btn-yellow);
     &:hover{
         background-color: lighten($btn-yellow, 15);
     }
@@ -61,8 +85,8 @@ $btn-dark-color: $black;
 .btn-cyan{
     @extend %btn;
     background-color: $btn-cyan;
-    color: $btn-default-color;
+    color: zoran($btn-cyan);
     &:hover{
         background-color: lighten($btn-cyan, 15);
     }
-}
+}*/
